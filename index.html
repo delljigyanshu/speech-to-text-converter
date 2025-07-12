@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speech to Text Transcription</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 550px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 15px 30px;
+            background: #00C9A7;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 30px;
+            margin: 15px;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #007BFF;
+            transform: scale(1.05);
+        }
+
+        .mic-button {
+            background: #ff4b5c;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            font-size: 40px;
+            border: none;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .mic-button:hover {
+            background: #c82333;
+            transform: scale(1.1);
+        }
+
+        .result {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #555;
+            text-align: left;
+            word-break: break-word;
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎤 Speech to Text Transcription</h1>
+
+    <!-- Microphone Button -->
+    <form action="/microphone" method="POST">
+        <button type="submit" class="mic-button">🎙️</button>
+    </form>
+
+    <!-- File Upload -->
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required><br>
+        <button type="submit">Upload & Transcribe</button>
+    </form>
+
+    {% if transcription %}
+        <div class="result">
+            <h3>📝 Transcribed Text:</h3>
+            <p>{{ transcription }}</p>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
