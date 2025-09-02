@@ -15,12 +15,12 @@ A web-based application that converts spoken audio into text using **JavaScript*
 
 ---
 
-## 📦 Project Structure  
-speech-to-text-converter/
-├── index.html # Main HTML file
-├── style.css # CSS styles
-├── script.js # JavaScript logic
-└── README.md # Project documentation
+## 📦 Project Structure  <br/>
+speech-to-text-converter/ <br/>
+├── index.html # Main HTML file <br/>
+├── style.css # CSS styles <br/>
+├── script.js # JavaScript logic <br/>
+└── README.md # Project documentation <br/>
 
 ---
 
@@ -39,28 +39,20 @@ Click the microphone button and start speaking to see real-time transcription.
 
 ##🛠 Built With
 
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
-
-Web Speech API
+- HTML5 <br/>
+- CSS3 <br/>
+- JavaScript (Vanilla) <br/>
+- Web Speech API <br/>
 
 ##✏ Customization Ideas
 
-🎨 Add dark/light theme toggle
-
-🌍 Support multiple languages for speech recognition
-
-💾 Option to download transcribed text as .txt or .docx file
-
-🔊 Add speech-to-speech translation by integrating with translation APIs
+🎨 Add dark/light theme toggle <br/>
+🌍 Support multiple languages for speech recognition <br/>
+💾 Option to download transcribed text as .txt or .docx file <br/>
+🔊 Add speech-to-speech translation by integrating with translation APIs <br/>
 
 🙋‍♂ Author
 
-Jigyanshu Agrawal
-
-GitHub:[@delljigyanshu](https://github.com/delljigyanshu/speech-to-text-converter)
-
-LinkedIn: [Jigyanshu Agrawal](https://www.linkedin.com/in/jigyanshu-agrawal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )
+Jigyanshu Agrawal <br/>
+GitHub:[@delljigyanshu](https://github.com/delljigyanshu/speech-to-text-converter) <br/>
+LinkedIn: [Jigyanshu Agrawal](https://www.linkedin.com/in/jigyanshu-agrawal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ) <br/>
